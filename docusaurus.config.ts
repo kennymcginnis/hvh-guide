@@ -1,7 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-import remarkGridTables from "remark-grid-tables";
 
 const config: Config = {
   title: "HvH Guide",
@@ -13,7 +12,7 @@ const config: Config = {
   url: "https://github.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/pages/hvh-guide",
+  baseUrl: "/hvh-guide",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -39,7 +38,6 @@ const config: Config = {
         docs: {
           sidebarCollapsible: true,
           sidebarPath: "./sidebars.ts",
-          remarkPlugins: [remarkGridTables],
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           editUrl:
@@ -62,6 +60,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: "Heroes vs Horde",
       logo: {
@@ -90,7 +93,7 @@ const config: Config = {
           items: [
             {
               label: "Tutorial",
-              to: "/docs/intro",
+              to: "/docs/tier-list",
             },
           ],
         },
