@@ -1,4 +1,3 @@
-/** @type {import("prettier").Options} */
 export default {
 	arrowParens: 'avoid',
 	bracketSameLine: false,
