@@ -20,6 +20,7 @@ const config: Config = {
   organizationName: "kennymcginnis", // Usually your GitHub org/user name.
   projectName: "hvh-guide", // Usually your repo name.
 
+  trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
