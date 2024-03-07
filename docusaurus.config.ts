@@ -2,6 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import { rehypeExtendedTable } from 'rehype-extended-table';
+import tailwindPlugin from "./plugins/tailwind-config.cjs";
 
 const config: Config = {
   title: "HvH Guide",
@@ -31,6 +32,8 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  plugins: [tailwindPlugin], // update this
 
   presets: [
     [
